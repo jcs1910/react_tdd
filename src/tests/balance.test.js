@@ -6,5 +6,5 @@ it('create an action to set the balance', function () {
 
     const expectedAction = { type: constants.SET_BALANCE, balance };
 
-
+    expect(actions.setBalance(balance)).toEqual(expectedAction)
 });
