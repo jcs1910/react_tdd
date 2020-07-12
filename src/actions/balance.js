@@ -1,5 +1,6 @@
 import * as constants from './constants'
 
+// 액션 함수
 export const setBalance = balance => {
     return {
         type: constants.SET_BALANCE,
