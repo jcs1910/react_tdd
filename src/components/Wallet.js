@@ -1,6 +1,5 @@
 import React, {Component} from "react"
 import { connect } from 'react-redux';
-import balance from "../reducers/balance";
 
 export class Wallet extends Component {
     render() {
@@ -12,5 +11,4 @@ export class Wallet extends Component {
     }
 }
 
-// eslint-disable-next-line no-unused-expressions
-export default connect(state => { balance: state } ,null)(Wallet);
+export default connect(state => { return { balance: state }  } ,null)(Wallet);

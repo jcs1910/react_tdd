@@ -14,6 +14,7 @@ describe('Wallet', function () {
     });
 
     it('displays the balance from props', () => {
+
        expect(wallet.find('.balance').text()).toEqual('Wallet balance: 20')
     });
 });
